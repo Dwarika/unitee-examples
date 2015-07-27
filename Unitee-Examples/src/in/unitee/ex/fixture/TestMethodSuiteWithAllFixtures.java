@@ -2,7 +2,7 @@ package in.unitee.ex.fixture;
 
 import in.unitee.lib.test.TestMethodSuite;
 
-public class TestMethodSuiteAllFixtures extends TestMethodSuite{
+public class TestMethodSuiteWithAllFixtures extends TestMethodSuite{
 	public void setUpClass(){
 		logger.info(getClassName() + ": Called setUpClass");
 	}
