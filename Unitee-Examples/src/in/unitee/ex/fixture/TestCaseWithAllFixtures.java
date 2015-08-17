@@ -7,14 +7,6 @@ public class TestCaseWithAllFixtures extends TestCase{
 		logger.info(getClassName() + ": Called setUpClass");
 	}
 	
-	public void setUp(){
-		logger.info(getClassName() + ": Called setUp");
-	}
-	
-	public void tearDown(){
-		logger.info(getClassName() + ": Called tearDown");
-	}
-	
 	public void tearDownClass(){
 		logger.info(getClassName() + ": Called tearDownClass");
 	}
