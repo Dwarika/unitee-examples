@@ -1,6 +1,7 @@
-package in.unitee.ex.fixture;
+package in.unitee.ex.basic.fixture;
 
-import in.unitee.lib.test.TestMethodSuite;
+import com.autocognite.unitee.core.test.style.TestMethodSuite;
+import static com.autocognite.unitee.core.validator.assertion.Assertions.*;
 
 public class TestMethodSuiteWithAllFixtures extends TestMethodSuite{
 	public void setUpClass(){
@@ -19,16 +20,13 @@ public class TestMethodSuiteWithAllFixtures extends TestMethodSuite{
 		logger.info(getClassName() + ": Called tearDownClass");
 	}
 
-	public void testMethod1(){
+	public void testMethod1() throws Exception{
 		logger.info(getClassName() + ": Called testMethod 1");
+		assertEquals(1,1);
 	}
 	
-	public void testMethod2(){
+	public void testMethod2() throws Exception{
 		logger.info(getClassName() + ": Called testMethod 2");
+		assertEquals(3,4);
 	}
-	
-	public void testMethod3() throws Exception{
-		logger.info(getClassName() + ": Called testMethod 3");
-	}
-
 }

@@ -1,8 +1,9 @@
-package in.unitee.ex.suite;
+package in.unitee.ex.intermediate.suite;
+
+import com.autocognite.unitee.core.test.style.TestSuite;
 
 import in.unitee.ex.basic.SimpleTestMethodSuite;
-import in.unitee.ex.datadriven.TabDelimFileDDTestSuite;
-import in.unitee.lib.test.TestSuite;
+import in.unitee.ex.basic.ddt.TabDelimFileDDTestSuite;
 
 public class CustomTestSuite2 extends TestSuite{
 

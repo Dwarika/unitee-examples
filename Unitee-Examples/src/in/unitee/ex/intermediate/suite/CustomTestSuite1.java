@@ -1,8 +1,9 @@
-package in.unitee.ex.suite;
+package in.unitee.ex.intermediate.suite;
+
+import com.autocognite.unitee.core.test.style.TestSuite;
 
 import in.unitee.ex.basic.SimpleTestCase;
 import in.unitee.ex.basic.SimpleTestCaseFail;
-import in.unitee.lib.test.TestSuite;
 
 public class CustomTestSuite1 extends TestSuite{
 

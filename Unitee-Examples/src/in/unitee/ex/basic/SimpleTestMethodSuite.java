@@ -1,21 +1,22 @@
 package in.unitee.ex.basic;
 
-import in.unitee.lib.test.TestMethodSuite;
+import com.autocognite.unitee.core.test.style.TestMethodSuite;
+
+import static com.autocognite.unitee.core.validator.assertion.Assertions.*;
 
 public class SimpleTestMethodSuite extends TestMethodSuite{
 
-	public void testMethodPass(){
-		
-		checker.assertEquals(1,1);
+	public void testMethodPass() throws Exception{	
+		assertEquals(1,1);
 	}
 	
-	public void testMethodFail(){
+	public void testMethodFail() throws Exception{
 		
-		checker.assertEquals(1,2);
+		assertEquals(1,2);
 	}
 	
 	public void testMethodError() throws Exception{
-		checker.error();
+		error();
 	}
 
 }
