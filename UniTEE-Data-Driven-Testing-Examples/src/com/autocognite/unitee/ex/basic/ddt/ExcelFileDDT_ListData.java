@@ -1,9 +1,7 @@
 package com.autocognite.unitee.ex.basic.ddt;
 
 import com.autocognite.unitee.lib.ddt.DDTestSuiteForListData;
-import com.autocognite.unitee.lib.ddt.DDTestSuiteForMapData;
 import com.autocognite.unitee.lib.ds.ListDataRecord;
-import com.autocognite.unitee.lib.ds.MapDataRecord;
 
 import static com.autocognite.unitee.lib.validator.Assertions.*;
 
