@@ -4,17 +4,17 @@ import com.autocognite.unitee.lib.ddt.DDTestSuiteForMapData;
 import com.autocognite.unitee.lib.ds.MapDataRecord;
 import static com.autocognite.unitee.lib.validator.Assertions.*;
 
-public class TabDelimFileDDTestSuite extends DDTestSuiteForMapData{
+public class Filter_IniFileDDT_MapData extends DDTestSuiteForMapData {
 
-	private int strToInt(Object input){
-		return Integer.parseInt((String)input);
+	private int strToInt(Object object) {
+		return Integer.parseInt((String) object);
 	}
 	
-	public void init() throws Exception{
-		setDataSource(this.getRunConfiguration().getStringPropValue("runner.data.directory") + "/input_exclude_option.txt");
+	public void init() throws Exception {
+		setDataSource(runConfig.getDataDir() + "/input_exclude_option.ini");
 	}
 		
-	public void repeat(MapDataRecord map) throws Exception{
+	public void repeat(MapDataRecord map) throws Exception {
 		int left = strToInt(map.get("Left"));
 		int right = strToInt(map.get("Right"));
 		int expectedSum = strToInt(map.get("Sum"));
